@@ -6,4 +6,1007 @@
     android:layout_height="match_parent"
     tools:context=".DietaCambios">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dieta 1"
+                    android:textSize="30sp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="2.5"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar cambios"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_save_black_24dp"
+                    android:layout_weight="0.25"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/desayuno"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desayuno"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoCarnes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carnes"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoCarbohidratos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoVegetales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetales"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoGrasasSaludables"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="G. Saludables"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/desayunoLacteos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lácteos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/merienda1"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merienda 1"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1Carnes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carnes"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1Carbohidratos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1Vegetales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetales"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1GrasasSaludables"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="G. Saludables"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1Frutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda1Lacteos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lácteos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/almuerzo"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Almuerzo"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoCarnes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carnes"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoCarbohidratos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoVegetales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetales"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoGrasasSaludables"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="G. Saludables"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/almuerzoLacteos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lácteos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/merienda2"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merienda 2"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2Carnes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carnes"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2Carbohidratos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2Vegetales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetales"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2GrasasSaludables"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="G. Saludables"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2Frutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/merienda2Lacteos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lácteos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/cena"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cena"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaCarnes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carnes"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaCarbohidratos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaVegetales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetales"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaGrasasSaludables"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="G. Saludables"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaFrutas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Frutas"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <CheckBox android:id="@+id/cenaLacteos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lácteos"
+                        android:layout_weight="1.25"
+                        android:onClick="onCheckboxClicked"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:textSize="15dp"
+                        android:text="Porciones"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
