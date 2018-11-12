@@ -35,7 +35,7 @@
                     android:text="Dieta 1"
                     android:textSize="30sp"
                     android:textAlignment="textStart"
-                    android:layout_weight="2.5"
+                    android:layout_weight="2.25"
                     />
 
                 <TextView
@@ -44,7 +44,7 @@
                     android:text="Guardar cambios"
                     android:textSize="20sp"
                     android:textAlignment="textStart"
-                    android:layout_weight="1"
+                    android:layout_weight="1.25"
                     />
 
                 <ImageView
@@ -60,7 +60,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/desayuno"
-                android:layout_margin="10dp">
+                android:background="@drawable/layout_round_corners"
+                android:layout_margin="10dp"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -250,6 +252,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/merienda1"
+                android:background="@drawable/layout_round_corners"
+                android:padding="10dp"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -440,6 +444,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/almuerzo"
+                android:background="@drawable/layout_round_corners"
+                android:padding="10dp"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -630,6 +636,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/merienda2"
+                android:background="@drawable/layout_round_corners"
+                android:padding="10dp"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -820,6 +828,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/cena"
+                android:background="@drawable/layout_round_corners"
+                android:padding="10dp"
                 android:layout_margin="10dp">
 
                 <TextView
