@@ -13,37 +13,46 @@ public class Temperatura extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temperatura);
-    Button btn_1 = findViewById(R.id.btn_1);
-    Button btn_2 = findViewById(R.id.btn_2);
+    Button btn_11 = findViewById(R.id.btn_11);
+    Button btn_12 = findViewById(R.id.btn_12);
+    Button btn_cont = findViewById(R.id.btn_contenido);
     ImageButton return_button = findViewById(R.id.return_button);
-    final Button btn_center_1=findViewById(R.id.btn_center_1);
+    final Button btn_center_6=findViewById(R.id.btn_center_6);
 
-    btn_1.setOnClickListener(new View.OnClickListener() {
+    btn_11.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String number=(String)btn_center_1.getText();
+            String number=(String)btn_center_6.getText();
             int trans = Integer.parseInt(number);
             trans-=2;
             String newNumber = Integer.toString(trans);
-            btn_center_1.setText(newNumber);
+            btn_center_6.setText(newNumber);
         }
     });
 
-    btn_2.setOnClickListener(new View.OnClickListener() {
+    btn_12.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String number=(String)btn_center_1.getText();
+            String number=(String)btn_center_6.getText();
             int trans = Integer.parseInt(number);
             trans+=2;
             String newNumber = Integer.toString(trans);
-            btn_center_1.setText(newNumber);
+            btn_center_6.setText(newNumber);
         }
     });
     return_button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(Temperatura.this, MainActivity.class));
+            //startActivity(new Intent(Temperatura.this, MainActivity.class));
+           finish();
         }
     });
+    btn_cont.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(Temperatura.this,ContenidoHistorial.class));
+        }
+    });
+
     }
 }
