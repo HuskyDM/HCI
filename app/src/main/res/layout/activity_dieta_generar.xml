@@ -52,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_margin="10dp"
+                    android:padding="10dp"
                     android:background="@drawable/layout_round_corners"/>
 
             </LinearLayout>
@@ -91,14 +92,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Días iguales"
-                            android:layout_weight="1"
-                            android:onClick="onRadioButtonClicked"/>
+                            android:layout_weight="1"/>
                         <RadioButton android:id="@+id/radio_ninjas"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Días diferentes"
-                            android:layout_weight="1"
-                            android:onClick="onRadioButtonClicked"/>
+                            android:layout_weight="1"/>
                     </RadioGroup>
 
                     <LinearLayout
@@ -143,32 +142,30 @@
                 <CheckBox android:id="@+id/comidaDesayuno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Desayuno"
-                    android:onClick="onCheckboxClicked"/>
+                    android:text="Desayuno"/>
 
                 <CheckBox android:id="@+id/comidaMerienda1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Merienda 1"
-                    android:onClick="onCheckboxClicked"/>
+                    android:text="Merienda 1"/>
 
                 <CheckBox android:id="@+id/comidaAlmuerzo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Almuerzo"
-                    android:onClick="onCheckboxClicked"/>
+                     />
 
                 <CheckBox android:id="@+id/comidaMerienda2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Merienda 2"
-                    android:onClick="onCheckboxClicked"/>
+                     />
 
                 <CheckBox android:id="@+id/comidaCena"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cena"
-                    android:onClick="onCheckboxClicked"/>
+                     />
 
             </LinearLayout>
 
@@ -180,6 +177,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/btnCancelar"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:text="Cancelar"/>
@@ -187,6 +185,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/btnAceptar"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:text="Aceptar"/>

@@ -22,11 +22,11 @@
                 android:layout_margin="10dp"
                 android:weightSum="4">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/return_button"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_revert"
                     android:layout_weight="0.25"/>
 
                 <TextView
@@ -38,20 +38,33 @@
                     android:layout_weight="2.25"
                     />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Guardar cambios"
-                    android:textSize="20sp"
-                    android:textAlignment="textStart"
-                    android:layout_weight="1.25"
-                    />
-
-                <ImageView
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_save_black_24dp"
-                    android:layout_weight="0.25"/>
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:id="@+id/guardar_cambios"
+                    android:background="@drawable/layout_round_corners"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Guardar cambios"
+                        android:textSize="20sp"
+                        android:textAlignment="textStart"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_save_black_24dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
@@ -82,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carnes"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -111,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carbohidratos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -140,7 +153,7 @@
                         android:layout_height="wrap_content"
                         android:text="Vegetales"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -169,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:text="G. Saludables"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -198,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:text="Frutas"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -227,7 +240,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lácteos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -274,7 +287,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carnes"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -303,7 +316,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carbohidratos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -332,7 +345,7 @@
                         android:layout_height="wrap_content"
                         android:text="Vegetales"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -361,7 +374,7 @@
                         android:layout_height="wrap_content"
                         android:text="G. Saludables"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -390,7 +403,7 @@
                         android:layout_height="wrap_content"
                         android:text="Frutas"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -419,7 +432,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lácteos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -466,7 +479,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carnes"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -495,7 +508,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carbohidratos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -524,7 +537,7 @@
                         android:layout_height="wrap_content"
                         android:text="Vegetales"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -553,7 +566,7 @@
                         android:layout_height="wrap_content"
                         android:text="G. Saludables"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -582,7 +595,7 @@
                         android:layout_height="wrap_content"
                         android:text="Frutas"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -611,7 +624,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lácteos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -658,7 +671,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carnes"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -687,7 +700,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carbohidratos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -716,7 +729,7 @@
                         android:layout_height="wrap_content"
                         android:text="Vegetales"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -745,7 +758,7 @@
                         android:layout_height="wrap_content"
                         android:text="G. Saludables"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -774,7 +787,7 @@
                         android:layout_height="wrap_content"
                         android:text="Frutas"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -803,7 +816,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lácteos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -850,7 +863,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carnes"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -879,7 +892,7 @@
                         android:layout_height="wrap_content"
                         android:text="Carbohidratos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -908,7 +921,7 @@
                         android:layout_height="wrap_content"
                         android:text="Vegetales"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -937,7 +950,7 @@
                         android:layout_height="wrap_content"
                         android:text="G. Saludables"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -966,7 +979,7 @@
                         android:layout_height="wrap_content"
                         android:text="Frutas"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -995,7 +1008,7 @@
                         android:layout_height="wrap_content"
                         android:text="Lácteos"
                         android:layout_weight="1.25"
-                        android:onClick="onCheckboxClicked"/>
+                         />
 
                     <EditText
                         android:layout_width="wrap_content"
