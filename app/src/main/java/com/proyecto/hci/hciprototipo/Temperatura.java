@@ -50,7 +50,7 @@ public class Temperatura extends AppCompatActivity {
     btn_cont.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(Temperatura.this,ContenidoHistorial.class));
+            startActivity(new Intent(Temperatura.this,ContenidoEstante.class));
         }
     });
 
